@@ -1,14 +1,42 @@
 {
-  "name": "Node-Website-EC2-Sample-App",
-  "description": "Sample NodeJs web application",
-  "version": "0.0.1",
+  "name": "mapping-counties-frontend",
+  "version": "1.0.0",
+  "description": "Render frontend (server- and client-side)",
   "private": true,
-  "devDependencies": {
+  "license": "MIT",
+  "scripts": {
+    "start": "razzle start",
+    "build": "razzle build",
+    "test": "razzle test --env=jsdom",
+    "start:prod": "NODE_ENV=production node build/server.js"
+  },
+  "dependencies": {
     "mocha": "5.0.0",
     "unit.js": "2.0.0",
-    "supertest": "3.0.0"
+    "supertest": "3.0.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.4",
+    "@fortawesome/free-solid-svg-icons": "^5.3.1",
+    "@fortawesome/react-fontawesome": "^0.1.3",
+    "@mapbox/sphericalmercator": "^1.1.0",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.3",
+    "connect-pg-simple": "^5.0.0",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "leaflet": "^1.3.4",
+    "mapnik": "^4.0.1",
+    "pg-promise": "^8.4.6",
+    "query-string": "^6.2.0",
+    "razzle": "^2.4.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-leaflet": "^1.0.1",
+    "react-leaflet-universal": "^1.2.0",
+    "react-router-dom": "^4.3.1",
+    "react-transition-group": "^2.5.0",
+    "serialize-javascript": "^1.5.0"
   },
-  "scripts": {
-    "test": "mocha --recursive tests --exit"
+  "devDependencies": {
+    "babel-eslint": "^10.0.1"
   }
 }
