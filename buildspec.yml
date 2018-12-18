@@ -4,9 +4,9 @@ phases:
   install:
     commands:
       # Install dependencies needed for running tests
-      - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash
-      - . '/root/.nvm/nvm.sh'
-      - nvm install v8.10.0
+      - rm -rf /etc/yum.repos.d/nodesource-el*
+      - curl -sL https://rpm.nodesource.com/setup_10.x | sudo -E bash -
+      - yum install nodejs --enablerepo=nodesource
       - echo 'node version'
       - node --version
       - echo 'npm version'
