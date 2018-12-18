@@ -4,9 +4,7 @@ phases:
   install:
     commands:
       # Install dependencies needed for running tests
-      - rm -rf /etc/yum.repos.d/nodesource-el*
-      - curl -sL https://rpm.nodesource.com/setup_10.x | bash -
-      - yum install -y nodejs --enablerepo=nodesource
+      - nvm install v10.6.0
       - echo 'node version'
       - node --version
       - echo 'npm version'
