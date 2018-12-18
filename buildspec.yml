@@ -4,8 +4,7 @@ phases:
   install:
     commands:
       # Install dependencies needed for running tests
-      - curl -sL https://rpm.nodesource.com/setup_8.x | bash -
-      - yum install -y nodejs
+      - nvm install v8.10.0
       - echo 'node version'
       - node --version
       - echo 'npm version'
