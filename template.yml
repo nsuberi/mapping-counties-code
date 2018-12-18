@@ -67,6 +67,8 @@ Resources:
             mkdir -p /var/awslogs/etc/config
             cp codedeploy_logs.conf /var/awslogs/etc/config/
             service awslogs restart
+            curl https://raw.githubusercontent.com/creationix/nvm/v0.25.0/install.sh | bash
+            source ~/.profile
     Type: AWS::EC2::Instance
   WebAppSG:
     Description: The default Amazon EC2 security group that will be created for the Amazon EC2 Linux instances.

@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      # Install dependencies needed for running tests
+      # Need to update node version to higher than major version 8
       - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash
       - . "/root/.nvm/nvm.sh"
       - nvm install v10.6.0
