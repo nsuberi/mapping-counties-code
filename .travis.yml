@@ -9,6 +9,7 @@ deploy:
   api_key:
     secure: VoD9Svk88Q3WYCO4BsAtVNabMjyS5q5OudX7wzKdZsD4VIeomRJBQoiVaLVhCjlJnwSnHAYtfc2Rc7R90z1NVk2s4wUBJEoaX42URiZcsfgfkEQqkjtSgYXQ+8Ip4csRe6Et8w5pmww9HwwKOIeZdYBcbuzqJNuyRgSPdPqkGDC42WTbduH8GjTdWmi1dXINWaFySW8pZnCy3Qr4vIsFgBbEttzPeMbhOt/0jQ73xmPl956sbOv5zPvYVqbpcGXSl/Q4TXtvZ2dRKPQ3vIQ0Z1RM5ONGvDRqBg9qW4QGg05s/5drBLRr48NxkNNlzy3TeevGxw88c8+UlBSi6J/fKhO5eZZ8sRTFlmxDhVFTmBggDoltATvSo27rchzHqnAF3Yk4b1HvibV4l6ykH32zsaCY05NcbJ3FiY7DqzXmMZWoPE7ouh1Jr6eIsardbyRyQqHXNqd4ZcMg01nPn4SJIqr6UEXoeICdEe71cz9KuqR1QJSUdZ+tGHkHI0mAXiMKHHuKMVHPjxP+ZFPw9B36PThaLUC539glLgVYqb7ewuuNH/LQbI+xR5SIBmY6QqtTuukl42WI8vjTiNa9qkY+F50V/I6mEGmzWsibwoU1DNfj3EALNZILBltsrhdZL9aVLDyaKtE+/xECSBC5UiVJEDXadVoMvjNDyYYoXRZiuMY=
   app: mapping-counties
+  skip_cleanup: true
   run:
 #    - "sleep 1"
     - "npm start"
