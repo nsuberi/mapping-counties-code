@@ -1,5 +1,8 @@
 module.exports = {
     modify: (config, { target, dev }, webpack) => {
+
+        require('razzle-heroku')
+
         // load webfonts
         rules = config.module.rules || [];
         rules.push({
