@@ -1,6 +1,13 @@
 language: node_js
 node_js:
   - "10"
+env:
+  - APP_COOKIE_SECRET=12345
+  - PGHOST= ### UPDATE ###
+  - PGDATABASE=colouring_aac
+  - PGUSER=admin
+  - PGPASSWORD=password
+  - PGPORT=5432
 
 deploy:
   provider: heroku
