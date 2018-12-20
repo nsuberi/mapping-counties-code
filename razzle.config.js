@@ -1,5 +1,5 @@
 module.exports = {
-  modify: modify: (config, { target, dev }, webpack) => {
+  modify: (config, { target, dev }, webpack) => {
 
       require('razzle-heroku')
 
